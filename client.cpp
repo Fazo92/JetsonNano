@@ -180,36 +180,17 @@ return NULL;
 		vector<float> descriptors;
 		Mat imggray,imgclone;
 		while(true){
-		imgclone=this->img;	
-		cvtColor(imgclone,imggray,COLOR_BGR2GRAY);
-		imgGPU.upload(imggray);
-		if (imgGPU.empty())
+			 detector->detect(this->img,keypoints,noArray());
+			if (keypoints.size() > 0)
 		{
-		cout << "Error!!: Upload is not succes" << endl;
-		}
-	
-		// mu.lock();
-		pthread_mutex_lock(&mu);
-		this->surfCUDA(imgGPU, cuda::GpuMat(), kpGPU, this->dscGPU);
-		// sift->detect(this->img,keypoints,noArray());
-        // detector->detect(this->img,keypoints,noArray());
-		this->surfCUDA.downloadKeypoints(kpGPU,keypoints);
-		this->kp=keypoints;
-		cout<<"keypoints.pt.x: "<<keypoints[0].pt.x<<endl;
-		pthread_mutex_unlock(&mu);
-		// mu.unlock();
-		for(int i=0; i<keypoints.size();i++)
+			int sendKeyPoints = send(sock, &keypoints[0], 29 * keypoints.size(), 0);
+			if (sendKeyPoints == -1)
 			{
-			int sendKpX=send(sock,(char*)&keypoints[i].pt.x,4,0);
-			int sendKpY=send(sock,(char*)&keypoints[i].pt.y,4,0);
-			int sendKpSize=send(sock,(char*)&keypoints[i].size,4,0);
-			if(sendKpX==-1||sendKpY==-1||sendKpSize==-1)
-	        {
-		        cout<<"Could not send Keypoints to server"<<endl;
-		        continue;
-	        }  
+				cout << "Could not send Keypoints to server" << endl;
+				continue;
+			}
+		}
 			}	
-			// cout<<keypoints.size()<<endl;
 		}
 	close(sock);
 	return NULL;
