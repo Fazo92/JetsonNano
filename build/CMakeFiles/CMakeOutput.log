@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/dlinano/TestCode/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/dlinano/JetsonNano/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/dlinano/TestCode/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/dlinano/JetsonNano/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3b8af/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3b8af.dir/build.make CMakeFiles/cmTC_3b8af.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_3b8af.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3b8af.dir/testCCompiler.c.o   -c /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_3b8af
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b8af.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_3b8af.dir/testCCompiler.c.o  -o cmTC_3b8af 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_0d1f4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0d1f4.dir/build.make CMakeFiles/cmTC_0d1f4.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_0d1f4.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0d1f4.dir/testCCompiler.c.o   -c /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_0d1f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d1f4.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_0d1f4.dir/testCCompiler.c.o  -o cmTC_0d1f4 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c15fe/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c15fe.dir/build.make CMakeFiles/cmTC_c15fe.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_c15fe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c15fe.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o  -o cmTC_c15fe 
+Run Build Command:"/usr/bin/make" "cmTC_1e38a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e38a.dir/build.make CMakeFiles/cmTC_1e38a.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1e38a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e38a.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o  -o cmTC_1e38a 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper
@@ -59,24 +59,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c15fe' '-mlittle-endian' '-mabi=lp64'
- /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cckKGbY0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_c15fe /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c15fe' '-mlittle-endian' '-mabi=lp64'
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1e38a' '-mlittle-endian' '-mabi=lp64'
+ /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccR9EeCK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_1e38a /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1e38a' '-mlittle-endian' '-mabi=lp64'
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c15fe/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c15fe.dir/build.make CMakeFiles/cmTC_c15fe.dir/build]
-  ignore line: [make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten]
-  ignore line: [Building C object CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_c15fe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c15fe.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o  -o cmTC_c15fe ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1e38a/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1e38a.dir/build.make CMakeFiles/cmTC_1e38a.dir/build]
+  ignore line: [make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten]
+  ignore line: [Building C object CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1e38a]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e38a.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o  -o cmTC_1e38a ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c15fe' '-mlittle-endian' '-mabi=lp64']
-  link line: [ /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cckKGbY0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_c15fe /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1e38a' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccR9EeCK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_1e38a /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cckKGbY0.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccR9EeCK.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -112,7 +112,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c15fe] ==> ignore
+    arg [cmTC_1e38a] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -124,7 +124,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/aarch64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_c15fe.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_1e38a.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -154,17 +154,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_85884/fast"
-/usr/bin/make -f CMakeFiles/cmTC_85884.dir/build.make CMakeFiles/cmTC_85884.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_85884.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_85884.dir/feature_tests.c.o   -c /home/dlinano/TestCode/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_85884
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85884.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_85884.dir/feature_tests.c.o  -o cmTC_85884 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_95cb1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95cb1.dir/build.make CMakeFiles/cmTC_95cb1.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_95cb1.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_95cb1.dir/feature_tests.c.o   -c /home/dlinano/JetsonNano/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_95cb1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95cb1.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_95cb1.dir/feature_tests.c.o  -o cmTC_95cb1 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -174,17 +174,17 @@ make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_df995/fast"
-/usr/bin/make -f CMakeFiles/cmTC_df995.dir/build.make CMakeFiles/cmTC_df995.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_df995.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_df995.dir/feature_tests.c.o   -c /home/dlinano/TestCode/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_df995
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df995.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_df995.dir/feature_tests.c.o  -o cmTC_df995 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_c4bd5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4bd5.dir/build.make CMakeFiles/cmTC_c4bd5.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_c4bd5.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c4bd5.dir/feature_tests.c.o   -c /home/dlinano/JetsonNano/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c4bd5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4bd5.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_c4bd5.dir/feature_tests.c.o  -o cmTC_c4bd5 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -194,17 +194,17 @@ make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fea88/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fea88.dir/build.make CMakeFiles/cmTC_fea88.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_fea88.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_fea88.dir/feature_tests.c.o   -c /home/dlinano/TestCode/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_fea88
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fea88.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_fea88.dir/feature_tests.c.o  -o cmTC_fea88 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_cc4d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cc4d7.dir/build.make CMakeFiles/cmTC_cc4d7.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_cc4d7.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_cc4d7.dir/feature_tests.c.o   -c /home/dlinano/JetsonNano/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cc4d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc4d7.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_cc4d7.dir/feature_tests.c.o  -o cmTC_cc4d7 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -212,30 +212,30 @@ make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2259f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2259f.dir/build.make CMakeFiles/cmTC_2259f.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_2259f.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_2259f.dir/testCXXCompiler.cxx.o -c /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_2259f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2259f.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_2259f.dir/testCXXCompiler.cxx.o  -o cmTC_2259f 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_4809c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4809c.dir/build.make CMakeFiles/cmTC_4809c.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_4809c.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_4809c.dir/testCXXCompiler.cxx.o -c /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_4809c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4809c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_4809c.dir/testCXXCompiler.cxx.o  -o cmTC_4809c 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4d314/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4d314.dir/build.make CMakeFiles/cmTC_4d314.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_4d314
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d314.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4d314 
+Run Build Command:"/usr/bin/make" "cmTC_e5f28/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5f28.dir/build.make CMakeFiles/cmTC_e5f28.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_e5f28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5f28.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e5f28 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper
@@ -245,24 +245,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4d314' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
- /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYCbNeq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_4d314 /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4d314' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e5f28' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0BmpL8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_e5f28 /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e5f28' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4d314/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4d314.dir/build.make CMakeFiles/cmTC_4d314.dir/build]
-  ignore line: [make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten]
-  ignore line: [Building CXX object CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_4d314]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d314.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4d314 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e5f28/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e5f28.dir/build.make CMakeFiles/cmTC_e5f28.dir/build]
+  ignore line: [make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten]
+  ignore line: [Building CXX object CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_e5f28]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5f28.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e5f28 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper]
@@ -272,13 +272,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/7/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4d314' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
-  link line: [ /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYCbNeq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_4d314 /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e5f28' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /usr/lib/gcc/aarch64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0BmpL8.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_e5f28 /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/7 -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/7/../../.. CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/7/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccYCbNeq.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0BmpL8.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -298,7 +298,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4d314] ==> ignore
+    arg [cmTC_e5f28] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/aarch64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -310,7 +310,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/aarch64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_4d314.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_e5f28.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,17 +336,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3636a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3636a.dir/build.make CMakeFiles/cmTC_3636a.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_3636a.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_3636a.dir/feature_tests.cxx.o -c /home/dlinano/TestCode/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_3636a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3636a.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_3636a.dir/feature_tests.cxx.o  -o cmTC_3636a 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_b30c8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b30c8.dir/build.make CMakeFiles/cmTC_b30c8.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_b30c8.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_b30c8.dir/feature_tests.cxx.o -c /home/dlinano/JetsonNano/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b30c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b30c8.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_b30c8.dir/feature_tests.cxx.o  -o cmTC_b30c8 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -409,17 +409,17 @@ make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d2315/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d2315.dir/build.make CMakeFiles/cmTC_d2315.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_d2315.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_d2315.dir/feature_tests.cxx.o -c /home/dlinano/TestCode/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_d2315
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2315.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_d2315.dir/feature_tests.cxx.o  -o cmTC_d2315 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_6ed26/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6ed26.dir/build.make CMakeFiles/cmTC_6ed26.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_6ed26.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_6ed26.dir/feature_tests.cxx.o -c /home/dlinano/JetsonNano/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6ed26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ed26.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_6ed26.dir/feature_tests.cxx.o  -o cmTC_6ed26 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -482,17 +482,17 @@ make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_932de/fast"
-/usr/bin/make -f CMakeFiles/cmTC_932de.dir/build.make CMakeFiles/cmTC_932de.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_932de.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_932de.dir/feature_tests.cxx.o -c /home/dlinano/TestCode/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_932de
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_932de.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_932de.dir/feature_tests.cxx.o  -o cmTC_932de 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_8e32d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8e32d.dir/build.make CMakeFiles/cmTC_8e32d.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_8e32d.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_8e32d.dir/feature_tests.cxx.o -c /home/dlinano/JetsonNano/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8e32d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e32d.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_8e32d.dir/feature_tests.cxx.o  -o cmTC_8e32d 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -555,17 +555,17 @@ make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5e51d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5e51d.dir/build.make CMakeFiles/cmTC_5e51d.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building CXX object CMakeFiles/cmTC_5e51d.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_5e51d.dir/feature_tests.cxx.o -c /home/dlinano/TestCode/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5e51d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e51d.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_5e51d.dir/feature_tests.cxx.o  -o cmTC_5e51d 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_2fc97/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2fc97.dir/build.make CMakeFiles/cmTC_2fc97.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building CXX object CMakeFiles/cmTC_2fc97.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_2fc97.dir/feature_tests.cxx.o -c /home/dlinano/JetsonNano/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2fc97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fc97.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_2fc97.dir/feature_tests.cxx.o  -o cmTC_2fc97 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -626,30 +626,30 @@ make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3120e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3120e.dir/build.make CMakeFiles/cmTC_3120e.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_3120e.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_3120e.dir/CheckIncludeFile.c.o   -c /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_3120e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3120e.dir/link.txt --verbose=1
-/usr/bin/cc -fPIC     CMakeFiles/cmTC_3120e.dir/CheckIncludeFile.c.o  -o cmTC_3120e 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_39b32/fast"
+/usr/bin/make -f CMakeFiles/cmTC_39b32.dir/build.make CMakeFiles/cmTC_39b32.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_39b32.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_39b32.dir/CheckIncludeFile.c.o   -c /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_39b32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39b32.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     CMakeFiles/cmTC_39b32.dir/CheckIncludeFile.c.o  -o cmTC_39b32 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/dlinano/TestCode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0e333/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0e333.dir/build.make CMakeFiles/cmTC_0e333.dir/build
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_0e333.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0e333.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_0e333
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e333.dir/link.txt --verbose=1
-/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0e333.dir/CheckFunctionExists.c.o  -o cmTC_0e333 -lpthread 
-make[1]: Verzeichnis „/home/dlinano/TestCode/build/CMakeFiles/CMakeTmp“ wird verlassen
+Run Build Command:"/usr/bin/make" "cmTC_c2170/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2170.dir/build.make CMakeFiles/cmTC_c2170.dir/build
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_c2170.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c2170.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c2170
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2170.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_c2170.dir/CheckFunctionExists.c.o  -o cmTC_c2170 -lpthread 
+make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
 
 

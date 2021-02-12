@@ -4,6 +4,7 @@ pthread_mutex_t mu=PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t muImg=PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t muSend=PTHREAD_MUTEX_INITIALIZER;
 
+
 void client::serialTCP()
 {
 	int sock=createSocketTCP(54000);
@@ -124,8 +125,9 @@ void createSocketUDP(int portNumber,sockaddr_in &server,int &sock)
 }
 
  void * client::sendFrameTCP()
-{
-    	int sock=createSocketTCP(54000);
+{	
+    int sock=createSocketTCP(54000);
+
 	while(true) {
 	rs2::context ctx;       
 	rs2::rates_printer printer;
@@ -175,7 +177,6 @@ return NULL;
         int sock=createSocketTCP(53000);
         // Ptr<cv::SIFT> sift=cv::SIFT::create();
 		Ptr<SURF> detector = SURF::create(400);
-		cuda::GpuMat kpGPU,imgGPU;
         std::vector<cv::KeyPoint> keypoints;
 		vector<float> descriptors;
 		Mat imggray,imgclone;
@@ -191,53 +192,39 @@ return NULL;
 			}
 		}
 			}	
-		}
+		
 	close(sock);
 	return NULL;
 }
 
-void * client::sendKeyPointsTCP2()
+void * client:: sendKeyPointsTCP2()
 {		
-		std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+			std::this_thread::sleep_for(std::chrono::milliseconds(2000));
         int sock=createSocketTCP(53000);
-        Ptr<SURF> detector=SURF::create(400);
+		Mat imgGray1;
+		cuda::SURF_CUDA surf;
+		cuda::GpuMat kpGPU,imgGPU;
         std::vector<cv::KeyPoint> keypoints;
 		vector<float> descriptors;
-		Mat imgclone,dsc,imgK;
+		Mat imggray,imgclone;
 		while(true){
-			imgclone=this->img;
-			pthread_mutex_lock(&mu);
-        detector->detectAndCompute(imgclone,noArray(),keypoints,dsc);
-		this->kp=keypoints;
-		this->dscVec=descriptors;
-		pthread_mutex_unlock(&mu);
-		// for(int i=0; i<keypoints.size();i++)
-		// 	{
-						if(keypoints.size()>0)	{
-			cout<<(char*)keypoints.data()<<endl;
-			pthread_mutex_lock(&muSend);
-			int sendKpX=send(sock,(char*)keypoints.data(),keypoints.size(),0);
-			pthread_mutex_unlock(&muSend);
-
-			// int sendKpY=send(sock,(char*)&keypoints[i].pt.y,4,0);
-			// int sendKpSize=send(sock,(char*)&keypoints[i].size,4,0);
-
-			// if(sendKpX==-1||sendKpY==-1||sendKpSize==-1)
-	        // {
-		    //     cout<<"Could not send Keypoints to server"<<endl;
-		    //     continue;
-	        // }  
-			// }
-			cout << "kp.pt.x: " << keypoints[0].pt.x << endl;
-
-
-			cout<<keypoints.size()<<endl;
-
+			cvtColor(this->img, imgGray1, COLOR_BGR2GRAY);
+			imgGPU.upload(imgGray1);
+			surf.detect(imgGPU, cuda::GpuMat(), kpGPU);
+			surf.downloadKeypoints(kpGPU, keypoints);
+			if (keypoints.size() > 0)
+		{
+			int sendKeyPoints = send(sock, &keypoints[0], 29 * keypoints.size(), 0);
+			if (sendKeyPoints == -1)
+			{
+				cout << "Could not send Keypoints to server" << endl;
+				continue;
 			}
-			
 		}
+			}	
+		
 	close(sock);
-	return NULL;
+	return NULL;	
 }
 
 void * client::sendDescriptorTCP()
@@ -264,12 +251,7 @@ void * client::sendDescriptorTCP()
 			// this->dscCol=dsc.cols;
 			// this->dscRow=dsc.rows;
 			// dsc=dsc.reshape(0,1);
-			int senddsc=send(sock,dsc.data,dscSize,0);
-			if(senddsc==-1)
-			{
-				cout<<"Could not send descriptor"<<endl;
-				continue;
-			}
+		
 
 		}
 	// }
@@ -282,30 +264,27 @@ void * client::sendCudaDescriptorTCP()
 {
 	std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 	int sock=createSocketTCP(52000);
-	std::vector< float > descriptors;
-	cuda::SURF_CUDA surfC;
-
-	GpuMat dscCuda;
+	std::vector< float > dscVec;
+	cuda::SURF_CUDA surf;
+	Mat imggray;
+	GpuMat dscCuda,kpGPU,img1;
 	while(true)
-	{		
-		dscCuda=this->dscGPU;
-		if(!dscCuda.empty()){
-		// mu.lock();
-		pthread_mutex_lock(&mu);
-		this->surfCUDA.downloadDescriptors(dscCuda,descriptors);
-		pthread_mutex_unlock(&mu);
-		// mu.unlock();
-
-		this->dscSize=(int)descriptors.size();
-		int senddsc=send(sock,(float*)descriptors.data(),(int)descriptors.size(),0);
-		if(senddsc==-1)
+	{	
+		cvtColor(this->img,imggray,COLOR_BGR2GRAY);	
+		img1.upload(imggray);
+		surf.detectWithDescriptors(img1,cuda::GpuMat(),kpGPU,dscCuda);
+		surf.downloadDescriptors(dscCuda,dscVec);
+		if(dscVec.empty()!=true)
+		{
+			int senddsc=send(sock,&dscVec[0],dscVec.size(),0);
+			if(senddsc==-1)
 			{
 				cout<<"Could not send descriptor"<<endl;
 				continue;
 			}
+		}
 
-		}
-		}
+	}
 
 
 	close(sock);

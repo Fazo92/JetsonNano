@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dlinano/TestCode -I/home/dlinano/TestCode/include -isystem /usr/local/include/opencv4 -isystem /usr/local/include 
+CXX_INCLUDES = -I/home/dlinano/JetsonNano -I/home/dlinano/JetsonNano/include -isystem /usr/local/include/opencv4 -isystem /usr/local/include 
 

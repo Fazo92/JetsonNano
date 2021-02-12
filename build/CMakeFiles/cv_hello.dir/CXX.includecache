@@ -50,11 +50,11 @@ chrono
 mutex
 -
 
-/home/dlinano/TestCode/client.cpp
+/home/dlinano/JetsonNano/client.cpp
 client.h
 -
 
-/home/dlinano/TestCode/client.h
+/home/dlinano/JetsonNano/client.h
 iostream
 -
 string
@@ -92,15 +92,15 @@ chrono
 thread
 -
 pthread.h
-/home/dlinano/TestCode/pthread.h
+/home/dlinano/JetsonNano/pthread.h
 chrono
 -
 mutex
 -
 
-/home/dlinano/TestCode/main.cpp
+/home/dlinano/JetsonNano/main.cpp
 client.h
-/home/dlinano/TestCode/client.h
+/home/dlinano/JetsonNano/client.h
 
 /usr/local/include/librealsense2/h/rs_config.h
 rs_types.h

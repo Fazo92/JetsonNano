@@ -3,7 +3,7 @@
 
 CMakeFiles/cv_hello.dir/client.cpp.o
  ..//client.h
- /home/dlinano/TestCode/client.cpp
+ /home/dlinano/JetsonNano/client.cpp
  /usr/local/include/librealsense2/h/rs_config.h
  /usr/local/include/librealsense2/h/rs_context.h
  /usr/local/include/librealsense2/h/rs_device.h
@@ -134,8 +134,8 @@ CMakeFiles/cv_hello.dir/client.cpp.o
  /usr/local/include/opencv4/opencv2/xfeatures2d/cuda.hpp
  /usr/local/include/opencv4/opencv2/xfeatures2d/nonfree.hpp
 CMakeFiles/cv_hello.dir/main.cpp.o
- /home/dlinano/TestCode/client.h
- /home/dlinano/TestCode/main.cpp
+ /home/dlinano/JetsonNano/client.h
+ /home/dlinano/JetsonNano/main.cpp
  /usr/local/include/librealsense2/h/rs_config.h
  /usr/local/include/librealsense2/h/rs_context.h
  /usr/local/include/librealsense2/h/rs_device.h

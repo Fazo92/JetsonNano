@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dlinano/TestCode/client.cpp" "/home/dlinano/TestCode/build/CMakeFiles/cv_hello.dir/client.cpp.o"
-  "/home/dlinano/TestCode/main.cpp" "/home/dlinano/TestCode/build/CMakeFiles/cv_hello.dir/main.cpp.o"
+  "/home/dlinano/JetsonNano/client.cpp" "/home/dlinano/JetsonNano/build/CMakeFiles/cv_hello.dir/client.cpp.o"
+  "/home/dlinano/JetsonNano/main.cpp" "/home/dlinano/JetsonNano/build/CMakeFiles/cv_hello.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
