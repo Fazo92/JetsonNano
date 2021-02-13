@@ -30,7 +30,7 @@ class client{
     public:
     int createSocketTCP(int port);
     // void createSocketUDP(int portNumber,sockaddr_in &server,int &sock);
-    Mat img;
+    Mat img,m_dsc;
     GpuMat dscGPU;
     vector<KeyPoint> kp;
     vector<float> dscVec;
