@@ -10,6 +10,7 @@ void client::serialTCP()
 	int sock=createSocketTCP(54000);
 	int sock2=createSocketTCP(53000);
 	int sock3=createSocketTCP(52000);
+	int sock33=createSocketTCP(80000);
 
 	while(true) {
 	rs2::context ctx;   
@@ -42,7 +43,7 @@ void client::serialTCP()
 // 	cv::Ptr<cv::ORB> detectororb = cv::ORB::create(5000);
 // 	cv::Ptr<cv::DescriptorExtractor> extractor = cv::ORB::create();
 	cv::Mat img_descriptors;
-	vector<float> dscVec;
+	Mat dsc;
 	while(true){
 		frames1=pipe1.wait_for_frames();
 		rs2::frame color_frame1 = frames1.get_color_frame();
@@ -51,19 +52,23 @@ void client::serialTCP()
 		std::vector<cv::KeyPoint> img_keypoints;
 
 // 		//sift detector###############################################################
-		detector->detectAndCompute(image,noArray(),img_keypoints,dscVec);
+		detector->detectAndCompute(image,noArray(),img_keypoints,dsc);
 		// int descriptorSize=img_descriptors.total()*img_descriptors.elemSize();
 		int imageSize = image.total()*image.elemSize();
 		int sendRes=send(sock,image.data,imageSize,0);
 
 		if(img_keypoints.size()>0)
 		{
-			int sendKp=send(sock2,&img_keypoints[0],29*img_keypoints.size(),0);
+			int sendKp=send(sock2,&img_keypoints[0],28*img_keypoints.size(),0);
 		}
 
-		if(dscVec.empty()!=true)
+		if(dsc.empty()!=true)
 		{
-			int senddsc=send(sock3,&dscVec[0],dscVec.size(),0);
+			int senddscRow=send(sock33,(char*)&dsc.rows,4,0);
+			int senddscCol=send(sock33,(char*)&dsc.cols,4,0);
+			int dscSize=dsc.elemSize()*dsc.total();
+			int senddsc=send(sock3,dsc.data,dscSize,0);
+
 		}
 
 		if(sendRes==-1)
@@ -77,6 +82,7 @@ void client::serialTCP()
 	close(sock);
 	close(sock2);
 	close(sock3);
+	close(sock33);
 
 }
 
@@ -172,7 +178,7 @@ return NULL;
 
  void * client::sendKeyPointsTCP()
 {		
-		std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+		std::this_thread::sleep_for(std::chrono::milliseconds(4000));
         int sock=createSocketTCP(53000);
         // Ptr<cv::SIFT> sift=cv::SIFT::create();
 		Ptr<SURF> detector = SURF::create(400);
@@ -183,14 +189,18 @@ return NULL;
 		while(true){
 			 detector->detectAndCompute(this->img,noArray(),keypoints,dsc);
 			 this->m_dsc=dsc;
+			 	cout <<"Value: "<< dsc.at<float>(dsc.rows-1,dsc.cols-1) << endl;
+				cout <<"Size: "<< dsc.size() << endl;
+				cout << " " << endl;
 			if (keypoints.size() > 0)
 		{
-			int sendKeyPoints = send(sock, &keypoints[0], 29 * keypoints.size(), 0);
+			int sendKeyPoints = send(sock, &keypoints[0], 28 * keypoints.size(), 0);
 			if (sendKeyPoints == -1)
 			{
 				cout << "Could not send Keypoints to server" << endl;
 				continue;
 			}
+
 		}
 			}	
 		
@@ -252,10 +262,10 @@ void * client::sendDescriptorTCP()
 					cout<<"Could not send descriptor"<<endl;
 					continue;
 				}
-				// cout << dsc.at<float>(20,20) << endl;
 
-				// imshow("DSC",dsc);
-				// if(waitKey(10)==27) break;
+
+
+
 			}else {
 				continue;
 			}

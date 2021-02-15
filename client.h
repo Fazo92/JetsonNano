@@ -43,6 +43,7 @@ class client{
     void *sendDim();
     void *sendCudaDescriptorTCP();
     void *CudasendDim();
+    void *sendFeatures();
     int dscRow;
     int dscCol;
     int dscSize;
