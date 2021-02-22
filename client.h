@@ -19,6 +19,8 @@
 #include "pthread.h"
 #include <chrono>
 #include <mutex>
+#include <netinet/in.h> 
+
 
 
 using namespace cv::xfeatures2d;
@@ -28,17 +30,21 @@ using namespace cuda;
 
 class client{
     public:
+    void serialUDP();
     int createSocketTCP(int port);
     // void createSocketUDP(int portNumber,sockaddr_in &server,int &sock);
     Mat img,m_dsc;
+
     GpuMat dscGPU;
     vector<KeyPoint> kp;
     vector<float> dscVec;
+	rs2::pipeline setRS();
+    Mat getFrameRS(	rs2::pipeline pipe);
     void serialTCP();
     void *sendFrameTCP();
     void *sendKeyPointsTCP();
     void *sendKeyPointsTCP2();
-
+    void *detectFeatures();
     void *sendDescriptorTCP();
     void *sendDim();
     void *sendCudaDescriptorTCP();
@@ -48,5 +54,10 @@ class client{
     int dscCol;
     int dscSize;
     cuda::SURF_CUDA surfCUDA;
+    private:
+    int m_sock1,m_sock2,m_sock3;
+    bool dscsend=false;
+    bool kpsend=false;
+    bool framesend=false;
 
 };

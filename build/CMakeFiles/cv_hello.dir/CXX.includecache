@@ -49,6 +49,8 @@ chrono
 -
 mutex
 -
+netinet/in.h
+-
 
 /home/dlinano/JetsonNano/client.cpp
 client.h
@@ -96,6 +98,8 @@ pthread.h
 chrono
 -
 mutex
+-
+netinet/in.h
 -
 
 /home/dlinano/JetsonNano/main.cpp
