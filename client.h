@@ -8,18 +8,22 @@
 #include <string.h>
 #include <string>
 #include <librealsense2/rs.hpp> // Include RealSense Cross Platform API
-#include <opencv2/opencv.hpp>   // Include OpenCV API
 #include <vector>
 #include <opencv2/features2d/features2d.hpp>
 #include <opencv2/xfeatures2d.hpp>
 #include <opencv2/xfeatures2d/cuda.hpp>
 #include <opencv2/cudafeatures2d.hpp>
+#include <opencv4/opencv2/core/types.hpp>
+#include "opencv2/calib3d.hpp"
+#include "opencv2/highgui.hpp"
+
 #include <chrono>
 #include <thread>
 #include "pthread.h"
 #include <chrono>
 #include <mutex>
 #include <netinet/in.h> 
+#include <opencv2/cudaoptflow.hpp>
 
 
 
@@ -34,13 +38,13 @@ class client{
     int createSocketTCP(int port);
     // void createSocketUDP(int portNumber,sockaddr_in &server,int &sock);
     Mat img,m_dsc;
-
+    int createServerSocket(int port);
     GpuMat dscGPU;
     vector<KeyPoint> kp;
     vector<float> dscVec;
-	rs2::pipeline setRS();
+	rs2::pipeline setRS(int fps);
     Mat getFrameRS(	rs2::pipeline pipe);
-    void serialTCP();
+    void *serialTCP();
     void *sendFrameTCP();
     void *sendKeyPointsTCP();
     void *sendKeyPointsTCP2();
@@ -50,6 +54,7 @@ class client{
     void *sendCudaDescriptorTCP();
     void *CudasendDim();
     void *sendFeatures();
+    void *computeHomography();
     int dscRow;
     int dscCol;
     int dscSize;

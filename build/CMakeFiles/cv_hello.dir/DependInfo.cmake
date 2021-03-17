@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dlinano/JetsonNano/client.cpp" "/home/dlinano/JetsonNano/build/CMakeFiles/cv_hello.dir/client.cpp.o"
   "/home/dlinano/JetsonNano/main.cpp" "/home/dlinano/JetsonNano/build/CMakeFiles/cv_hello.dir/main.cpp.o"
+  "/home/dlinano/JetsonNano/rsfeatures.cpp" "/home/dlinano/JetsonNano/build/CMakeFiles/cv_hello.dir/rsfeatures.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

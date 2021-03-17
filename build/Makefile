@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/cv_hello.dir/build.make CMakeFiles/cv_hello.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rsfeatures.o: rsfeatures.cpp.o
+
+.PHONY : rsfeatures.o
+
+# target to build an object file
+rsfeatures.cpp.o:
+	$(MAKE) -f CMakeFiles/cv_hello.dir/build.make CMakeFiles/cv_hello.dir/rsfeatures.cpp.o
+.PHONY : rsfeatures.cpp.o
+
+rsfeatures.i: rsfeatures.cpp.i
+
+.PHONY : rsfeatures.i
+
+# target to preprocess a source file
+rsfeatures.cpp.i:
+	$(MAKE) -f CMakeFiles/cv_hello.dir/build.make CMakeFiles/cv_hello.dir/rsfeatures.cpp.i
+.PHONY : rsfeatures.cpp.i
+
+rsfeatures.s: rsfeatures.cpp.s
+
+.PHONY : rsfeatures.s
+
+# target to generate assembly for a file
+rsfeatures.cpp.s:
+	$(MAKE) -f CMakeFiles/cv_hello.dir/build.make CMakeFiles/cv_hello.dir/rsfeatures.cpp.s
+.PHONY : rsfeatures.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rsfeatures.o"
+	@echo "... rsfeatures.i"
+	@echo "... rsfeatures.s"
 .PHONY : help
 
 

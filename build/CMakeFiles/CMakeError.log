@@ -1,23 +1,23 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cca39/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cca39.dir/build.make CMakeFiles/cmTC_cca39.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cd141/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd141.dir/build.make CMakeFiles/cmTC_cd141.dir/build
 make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_cca39.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_cca39.dir/CheckSymbolExists.c.o   -c /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_cca39
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cca39.dir/link.txt --verbose=1
-/usr/bin/cc -fPIC     CMakeFiles/cmTC_cca39.dir/CheckSymbolExists.c.o  -o cmTC_cca39 
-CMakeFiles/cmTC_cca39.dir/CheckSymbolExists.c.o: In Funktion »main«:
+Building C object CMakeFiles/cmTC_cd141.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_cd141.dir/CheckSymbolExists.c.o   -c /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cd141
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd141.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     CMakeFiles/cmTC_cd141.dir/CheckSymbolExists.c.o  -o cmTC_cd141 
+CMakeFiles/cmTC_cd141.dir/CheckSymbolExists.c.o: In Funktion »main«:
 CheckSymbolExists.c:(.text+0x14): Warnung: undefinierter Verweis auf »pthread_create«
 CheckSymbolExists.c:(.text+0x18): Warnung: undefinierter Verweis auf »pthread_create«
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_cca39.dir/build.make:97: recipe for target 'cmTC_cca39' failed
-make[1]: *** [cmTC_cca39] Error 1
+CMakeFiles/cmTC_cd141.dir/build.make:97: recipe for target 'cmTC_cd141' failed
+make[1]: *** [cmTC_cd141] Error 1
 make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
-Makefile:126: recipe for target 'cmTC_cca39/fast' failed
-make: *** [cmTC_cca39/fast] Error 2
+Makefile:126: recipe for target 'cmTC_cd141/fast' failed
+make: *** [cmTC_cd141/fast] Error 2
 
 File /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -37,20 +37,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0bfbe/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0bfbe.dir/build.make CMakeFiles/cmTC_0bfbe.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c9188/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c9188.dir/build.make CMakeFiles/cmTC_c9188.dir/build
 make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_0bfbe.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0bfbe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_0bfbe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bfbe.dir/link.txt --verbose=1
-/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0bfbe.dir/CheckFunctionExists.c.o  -o cmTC_0bfbe -lpthreads 
+Building C object CMakeFiles/cmTC_c9188.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c9188.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c9188
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9188.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_c9188.dir/CheckFunctionExists.c.o  -o cmTC_c9188 -lpthreads 
 /usr/bin/ld: -lpthreads kann nicht gefunden werden
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_0bfbe.dir/build.make:97: recipe for target 'cmTC_0bfbe' failed
-make[1]: *** [cmTC_0bfbe] Error 1
+CMakeFiles/cmTC_c9188.dir/build.make:97: recipe for target 'cmTC_c9188' failed
+make[1]: *** [cmTC_c9188] Error 1
 make[1]: Verzeichnis „/home/dlinano/JetsonNano/build/CMakeFiles/CMakeTmp“ wird verlassen
-Makefile:126: recipe for target 'cmTC_0bfbe/fast' failed
-make: *** [cmTC_0bfbe/fast] Error 2
+Makefile:126: recipe for target 'cmTC_c9188/fast' failed
+make: *** [cmTC_c9188/fast] Error 2
 
 
